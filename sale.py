@@ -26,7 +26,7 @@ def high_value_orders(df, threshold=1000):
 
 def export_to_csv(df, filename):
     df.to_csv(filename, index=False)
-    print(f"✅ Exported to '{filename}'")
+    print("Exported to '{filename}'")
 
 def main():
     df = load_data("sales.csv")
