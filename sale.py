@@ -33,19 +33,19 @@ def main():
     if df is None:
         return
 
-    print("\n💰 Total Revenue: ₹", total_revenue(df))
+    print("\n Total Revenue: ₹", total_revenue(df))
 
-    print("\n🧍 Revenue by Customer:")
+    print("\n Revenue by Customer:")
     print(revenue_by_customer(df))
 
-    print("\n📦 Revenue by Product:")
+    print("\n Revenue by Product:")
     print(revenue_by_product(df))
 
-    print("\n📅 Daily Sales:")
+    print("\n Daily Sales:")
     print(daily_sales(df))
 
     high_orders = high_value_orders(df)
-    print("\n🔍 High-Value Orders (> ₹1000):")
+    print("\n High-Value Orders (> ₹1000):")
     print(high_orders)
 
     export_to_csv(high_orders, "high_value_orders.csv")
